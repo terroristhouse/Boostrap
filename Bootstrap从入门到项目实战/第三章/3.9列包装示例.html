@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速掌握Bootstrap4布局</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-4">列包装</h3>
+<!--在小于md型的设备上显示为一个全宽列和一个半宽列，在大于等于md型设备上显示为一列，分别占八份和一份-->
+<div class="row no-gutters">
+    <div class="col-9 border py-3 bg-light">.col-9</div>
+    <div class="col-4 border py-3 bg-light">.col-4 <br>因为9+4=13>12,4列宽的div被包装到一个新行上，作为一个连续的单元。</div>
+    <div class="col-6 border py-3 bg-light">.col-6 <br>后续的列沿着新行继续排列</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+

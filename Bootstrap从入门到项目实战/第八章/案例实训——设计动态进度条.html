@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入掌握CSS组件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .load-bar{
+            border-radius: 12px;
+            position: relative;
+        }
+        .progress-bar-striped{
+            width: 0%;
+            border-radius: inherit;
+            position: relative;
+            animation: loader 10s linear infinite;
+        }
+        @keyframes loader {
+            from {width: 0%;}
+            to{width: 100%;}
+        }
+    </style>
+</head>
+<body class="container">
+<div class="progress load-bar my-5" style="height: 25px">
+    <div class="progress-bar progress-bar-striped text-center">
+        <span id="counter"></span>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        var interval = setInterval(increment,100);
+        var current = 0;
+        function increment() {
+            current ++;
+            $('#counter').html(current+'%');
+            if(current == 100){
+                current = 0;
+            }
+        }
+    })
+</script>
+</body>
+</html>
