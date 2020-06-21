@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button">下拉菜单</button>
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item">菜单项一</a>
+        <a href="#" class="dropdown-item">菜单项二</a>
+        <a href="#" class="dropdown-item">菜单项三</a>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('.btn').dropdown();
+    })
+</script>
+</body>
+</html>

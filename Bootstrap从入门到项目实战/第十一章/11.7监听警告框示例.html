@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<div class="alert alert-warning fade show">
+    <strong>警告信息！</strong>程序中出现一个语法问题。
+    <button type="button" class="close">
+        <span>&times;</span>
+    </button>
+</div>
+<!--模态框-->
+<div class="modal" id="Model-test">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">提示</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">你确定要关闭警告框吗？</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">是</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">否</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('.close').click(function () {
+            $(this).alert('close')
+        });
+        $('.alert').on('close.bs.alert',function (e) {
+            $('#Model-test').modal();
+        })
+    })
+</script>
+</body>
+</html>

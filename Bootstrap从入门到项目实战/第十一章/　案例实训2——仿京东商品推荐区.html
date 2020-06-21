@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .custom .active{
+            border-radius: 0!important;
+            background: #ff5774!important;
+        }
+        .color1{
+            color: #FF4466;
+        }
+        .color2{
+            color: #ff9797;
+        }
+        .value{
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body class="container">
+<h3>热销精品<small class="ml-2 text-muted">HOT</small></h3>
+<ul class="nav nav-pills d-flex custom">
+    <li class="nav-item border flex-fill text-center">
+        <a href="#image1" class="nav-link active" data-toggle="tab">裤装</a>
+    </li>
+    <li class="nav-item border flex-fill text-center">
+        <a href="#image2" class="nav-link" data-toggle="tab">上衣</a>
+    </li>
+    <li class="nav-item border flex-fill text-center">
+        <a href="#image3" class="nav-link" data-toggle="tab">裙子</a>
+    </li>
+    <li class="nav-item border flex-fill text-center">
+        <a href="#image4" class="nav-link" data-toggle="tab">衬衫</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="image1">
+        <div class="row no-gutters">
+            <div class="col-3 p-3 border">
+                <img src="http://img11.360buyimg.com/n7/jfs/t1/100426/23/398/359161/5dabfd4dE281cad64/fdb059a7fd24e21d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/96711/33/6971/107464/5df797fcE6bafe5ad/b164384642dac605.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/125902/22/4541/232758/5eddf729E83f05163/90d8baaa3cfc1938.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/143314/40/1074/267496/5eec846eEb9b6bce5/20d91f1c58737441.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/130673/1/2572/166108/5eec1c9fE122ff56f/ee7678ab000ec2fa.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img13.360buyimg.com/n7/jfs/t1/135489/34/2650/181821/5eed6589E9893eab0/ceb95fc3b99abe2d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/33878/31/8726/151487/5cc7118dE74968f9e/932be243397081cd.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img14.360buyimg.com/n7/jfs/t1/101336/38/6885/169735/5df7a30dEff8aad5f/44b12c05f5f43bfe.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="image2">
+        <div class="row no-gutters">
+            <div class="col-3 p-3 border">
+                <img src="http://img11.360buyimg.com/n7/jfs/t1/100426/23/398/359161/5dabfd4dE281cad64/fdb059a7fd24e21d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/96711/33/6971/107464/5df797fcE6bafe5ad/b164384642dac605.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/125902/22/4541/232758/5eddf729E83f05163/90d8baaa3cfc1938.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/143314/40/1074/267496/5eec846eEb9b6bce5/20d91f1c58737441.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/130673/1/2572/166108/5eec1c9fE122ff56f/ee7678ab000ec2fa.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img13.360buyimg.com/n7/jfs/t1/135489/34/2650/181821/5eed6589E9893eab0/ceb95fc3b99abe2d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/33878/31/8726/151487/5cc7118dE74968f9e/932be243397081cd.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img14.360buyimg.com/n7/jfs/t1/101336/38/6885/169735/5df7a30dEff8aad5f/44b12c05f5f43bfe.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="image3">
+        <div class="row no-gutters">
+            <div class="col-3 p-3 border">
+                <img src="http://img11.360buyimg.com/n7/jfs/t1/100426/23/398/359161/5dabfd4dE281cad64/fdb059a7fd24e21d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/96711/33/6971/107464/5df797fcE6bafe5ad/b164384642dac605.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/125902/22/4541/232758/5eddf729E83f05163/90d8baaa3cfc1938.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/143314/40/1074/267496/5eec846eEb9b6bce5/20d91f1c58737441.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/130673/1/2572/166108/5eec1c9fE122ff56f/ee7678ab000ec2fa.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img13.360buyimg.com/n7/jfs/t1/135489/34/2650/181821/5eed6589E9893eab0/ceb95fc3b99abe2d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/33878/31/8726/151487/5cc7118dE74968f9e/932be243397081cd.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img14.360buyimg.com/n7/jfs/t1/101336/38/6885/169735/5df7a30dEff8aad5f/44b12c05f5f43bfe.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="image4">
+        <div class="row no-gutters">
+            <div class="col-3 p-3 border">
+                <img src="http://img11.360buyimg.com/n7/jfs/t1/100426/23/398/359161/5dabfd4dE281cad64/fdb059a7fd24e21d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/96711/33/6971/107464/5df797fcE6bafe5ad/b164384642dac605.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/125902/22/4541/232758/5eddf729E83f05163/90d8baaa3cfc1938.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img11.360buyimg.com/n7/jfs/t1/143314/40/1074/267496/5eec846eEb9b6bce5/20d91f1c58737441.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/130673/1/2572/166108/5eec1c9fE122ff56f/ee7678ab000ec2fa.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img13.360buyimg.com/n7/jfs/t1/135489/34/2650/181821/5eed6589E9893eab0/ceb95fc3b99abe2d.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img12.360buyimg.com/n7/jfs/t1/33878/31/8726/151487/5cc7118dE74968f9e/932be243397081cd.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border">
+                <img src="//img14.360buyimg.com/n7/jfs/t1/101336/38/6885/169735/5df7a30dEff8aad5f/44b12c05f5f43bfe.jpg" alt="" class="img-fluid">
+                <p class="my-2 value text-center">夏季新款韩版修身时尚淑女装</p>
+                <div class="row text-center">
+                    <div class="col-6 border-right value color1">￥89</div>
+                    <div class="col-6 value"><a href="#" class="text-dark"><i class="fa fa-weixin mr-1 color2"></i>208评价</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

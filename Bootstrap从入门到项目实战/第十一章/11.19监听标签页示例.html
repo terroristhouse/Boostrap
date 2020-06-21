@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<ul class="nav nav-tabs" id="myTab">
+    <li class="nav-item">
+        <a href="#image1" class="nav-link active" data-toggle="tab">图片1</a>
+    </li>
+    <li class="nav-item">
+        <a href="#image2" class="nav-link" data-toggle="tab">图片2</a>
+    </li>
+    <li class="nav-item">
+        <a href="#image3" class="nav-link" data-toggle="tab">图片3</a>
+    </li>
+    <li class="dropdown nav-item">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">更多内容</a>
+        <ul class="dropdown-menu">
+            <li class="nav-item">
+                <a href="#image4" class="nav-link" data-toggle="tab">图片4</a>
+            </li>
+            <li class="nav-item">
+                <a href="#image5" class="nav-link" data-toggle="tab">图片5</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="image1">图片1</div>
+    <div class="tab-pane fade show" id="image2">图片2</div>
+    <div class="tab-pane fade show" id="image3">图片3</div>
+    <div class="tab-pane fade show" id="image4">图片4</div>
+    <div class="tab-pane fade show" id="image5">图片5</div>
+</div>
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#myTab a').on('click',function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+        $('#myTab a').on('show.bs.tab',function (e) {
+            alert('旧的选项卡；' + e.relatedTarget);
+            alert('将被激活的选项卡：' + e.target);
+        })
+    })
+</script>
+</body>
+</html>

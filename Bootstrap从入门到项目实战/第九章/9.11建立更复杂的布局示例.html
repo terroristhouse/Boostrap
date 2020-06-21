@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>高级的CSS组件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h2 class="mb-4">复杂的表单网格布局</h2>
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="name">姓名</label>
+            <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" id="password" placeholder="PassWord">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">邮箱</label>
+        <input type="email" class="form-control" id="email" placeholder="example@qq.com">
+    </div>
+    <div class="form-group">
+        <label for="address">户籍</label>
+        <input type="text" class="form-control" id="address" placeholder="户籍所在地">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="inputCity">现居城市</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="现在所居住的城市">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">乡、镇</label>
+            <select id="inputState" class="form-control">
+                <option selected>选择</option>
+                <option>选择</option>
+            </select>
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputZip">邮编</label>
+            <input type="text" class="form-control" id="inputZip" placeholder="例如：833300">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="gridCheck">
+            <label for="gridCheck" class="form-check-label">记住我</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">注册</button>
+</form>
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

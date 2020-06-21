@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Bootstrap 4的新增组件——旋转器和卡片</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #efeeea;
+            color: #757575;
+        }
+
+        .wrapper {
+            width: 350px;
+            margin: 200px auto;
+        }
+
+        .wrapper .load-bar {
+            width: 100%;
+            height: 25px;
+            border-radius: 30px;
+            background: #dcdbd7;
+            position: relative;
+        }
+
+        .wrapper .load-bar-inner {
+            height: 99%;
+            width: 0;
+            border-radius: inherit;
+            position: relative;
+            background: #c2d7ac;
+            animation: loader 10s linear infinite;
+        }
+
+        @keyframes loader {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%
+            }
+        }
+
+        .wrapper #counter {
+            position: absolute;
+            background: #eeeff3;
+            background: linear-gradient(#eeeff3, #cbcbd3);
+            padding: 5px 10px;
+            border-radius: 0.4em;
+            left: -25px;
+            top: -50px;
+            font-size: 12px;
+            font-weight: bold;
+            width: 44px;
+            animation: counter 10s linear infinite;
+        }
+
+        .wrapper #counter:after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #cbcbd3;
+            transform: rotate(45deg);
+            left: 50%;
+            margin-left: -4px;
+            bottom: -4px;
+            border-radius: 0 0 3px 0;
+        }
+
+        @keyframes counter {
+            from {
+                left: -25px
+            }
+            to {
+                left: 323px
+            }
+        }
+
+        .wrapper .load-bar:hover .load-bar-inner, .wrapper .load-bar:hover #counter {
+            animation-play-state: paused;
+        }
+        .wrapper h1{
+            font-size: 28px;
+            padding: 20px 0 8px 0;
+        }
+        .wrapper p{
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body class="container">
+<div class="wrapper">
+    <div class="load-bar">
+        <div class="load-bar-inner">
+            <span id="counter"></span>
+        </div>
+    </div>
+    <h1 class="text-center"><span class="spinner-border mr-4"></span>Loading...</h1>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        //定义定时器，0.1秒调用一次increment()方法
+        var interval = setInterval(increment, 100);
+        var current = 0;
+
+        //定义increment()方法
+        function increment() {
+        //    定时器每调用一次，自增一
+            current ++;
+        //    设置指示器的内容
+            $('#counter').html(current + '%');
+        //    当current变量值为100时重置
+            if (current == 100){current = 0;}
+        }
+    //    当鼠标悬浮在Load-bar上时，清除定时器
+        $('.load-bar').mouseover(function () {
+            clearInterval(interval);
+        })
+    //    当鼠标移开load-bar时，启动定时器
+        .mouseout(function () {
+            interval = setInterval(increment,100);
+        })
+    })
+</script>
+</body>
+</html>

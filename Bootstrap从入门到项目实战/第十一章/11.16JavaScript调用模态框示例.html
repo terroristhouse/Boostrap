@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<button type="button" class="btn btn-primary">打开模态框</button>
+<div class="modal" id="Modal-test">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-header" id="modalTitle">模态框标题</h5>
+                <button class="close" type="button" data-dismiss>&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body">
+                    <h5>弹窗</h5>
+                    <p>单击这个<a href="#" role="button" class="btn btn-secondary popover-test" title="弹窗标题"
+                              data-content="弹窗的主题内容">button</a>触发一个弹窗。</p>
+                    <hr>
+                    <h5>工具提示</h5>
+                    <p>鼠标指针悬浮 <a href="#" class="tooltip-test" title="链接一">链接一</a>和 <a href="#" class="tooltip-test"
+                                                                                       title="链接二">链接二</a>触发工具提示。</p>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('.btn').click(function () {
+            $('#Modal-test').modal();
+        })
+    })
+</script>
+</body>
+</html>

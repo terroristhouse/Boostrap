@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .del{
+            border: 2px solid white!important;
+            padding: 3px 8px 5px !important;
+            border-radius: 50%;
+            display: inline-block;
+            right: 2px;
+            top: 2px;
+            background: #F72943!important;
+        }
+        .redWars{
+            border: 1px solid white!important;
+            padding: 15px 26px !important;
+            border-radius: 50%;
+            font-size: 40px;
+            color: #F72943;
+            background: yellow;
+            display: inline-block;
+            position: absolute;
+            left: 105px;
+            top: 260px;
+        }
+    </style>
+</head>
+<body class="container">
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 300px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close del" type="button" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592753747124&di=742a4c7e7baba2dddd61ed368ff19881&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Fback_pic%2F05%2F74%2F81%2F035bd561660d4a9.jpg%2521r650%2Ffw%2F800" class="img-fluid rounded" alt="">
+                <a href="#" class="btn redWars">抢</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#myModal').modal('show');
+    })
+</script>
+</body>
+</html>

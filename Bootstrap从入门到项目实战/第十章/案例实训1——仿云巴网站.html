@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Bootstrap 4的新增组件——旋转器和卡片</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .color1{
+            color: #00adee;
+        }
+        .size{
+            font-size: 20px;
+        }
+        .line{
+            border-bottom: 2px solid #00adee;
+            width: 100px;
+            margin: auto;
+        }
+        .card-header{
+            background: #00ceef;
+            color: white;
+        }
+        .color2{
+            background: #e4e4e4;
+            color: #13082b;
+        }
+        .card-body img{
+            margin-bottom: 30px;
+        }
+        .card-body p{
+            font-size: 18px;
+        }
+        .row h4{
+            font-weight: 900;
+        }
+        .card{
+            min-height: 400px;
+        }
+        .card{
+            transition: text-shadow 3s linear;
+        }
+        .card:hover{
+            box-shadow: 3px 3px 20px 0 #a4b9b4,-3px -3px 20px 0 #a4b9b4;
+        }
+    </style>
+</head>
+<body class="container">
+<h2 class="color1 text-center">云巴示例和案例</h2>
+<div class="line"></div>
+<p class="text-center my-2 size">我们为移动应用以及智能设备开发提供后端服务，助你打造最佳实时应用</p>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4 text-center">
+            <div class="card-header"><h4>视频直播互动</h4></div>
+            <div class="card-body">
+                <img src="http://img5.imgtn.bdimg.com/it/u=2029597372,1520689243&fm=26&gp=0.jpg" class="w-75" alt="">
+                <p class="card-text">借助云巴的第三方直播互动技术，直播平台可快速实现弹幕，打赏，点赞，点爱心等直播互动功能。</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card mb-4 text-center">
+            <div class="card-header color2"><h4>掌阅iReader</h4></div>
+            <div class="card-body">
+                <img src="http://img5.imgtn.bdimg.com/it/u=3316554837,488915588&fm=15&gp=0.jpg" class="w-75" alt="">
+                <p class="card-text">用户量大对公司来说是一件好事，然而，巨大的用户量也给iReader后端处理带来了麻烦。</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card mb-4 text-center">
+            <div class="card-header"><h4>即时通信</h4></div>
+            <div class="card-body">
+                <img src="http://img.ui.cn/data/file/9/5/4/702459.png" class="w-75" alt="">
+                <p class="card-text">随着移动互联网的发展，社交需求场景不再局限于qq,微信等个人聊天工具</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card mb-4 text-center">
+            <div class="card-header"><h4>共享单车</h4></div>
+            <div class="card-body">
+                <img src="http://blog.mydrivers.com/img/20170904/s_caff385cee4f42d8ada305c6dbd559e2.png" class="w-75" alt="">
+                <p class="card-text">使用云巴SDK的云巴共享单车锁，采用GPS定位，用户可通过蓝牙+GPRS扫码开锁。</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card mb-4 text-center">
+            <div class="card-header color2"><h4>智能门锁</h4></div>
+            <div class="card-body">
+                <img src="http://y3.ifengimg.com/a/2015_33/dfc2be18ff87ffd.jpg" class="w-75" alt="">
+                <p class="card-text">云巴智能蓝牙门锁一站式解决方案。</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+         <div class="card mb-4 text-center">
+            <div class="card-header"><h4>智能车位锁</h4></div>
+            <div class="card-body">
+                <img src="http://img2.imgtn.bdimg.com/it/u=432679038,2716987874&fm=26&gp=0.jpg" class="w-75" alt="">
+                <p class="card-text">云巴共享车位方案包含智能车位锁，APP开发，电子控制系统，提供一站式解决方案。</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

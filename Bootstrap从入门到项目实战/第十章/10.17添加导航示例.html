@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Bootstrap 4的新增组件——旋转器和卡片</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-4">添加标签导航</h3>
+<div class="card">
+    <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-table" data-toggle="tab" href="#nav1">电影</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-table" data-toggle="tab" href="#nav2">电视剧</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-table" data-toggle="tab" href="#nav3">动漫</a>
+            </li>
+        </ul>
+    </div>
+    <div class="card-body tab-content">
+        <div class="tab-pane fade show active" id="nav1">
+            <div class="card-body">
+                <h5 class="card-title">电影</h5>
+                <p class="card-text"><input type="text" class="form-control"></p>
+                <a href="#" class="btn btn-primary">搜索</a>
+            </div>
+        </div>
+        <div class="tab-pane fade show" id="nav2">
+            <div class="card-body">
+                <h5 class="card-title">电视剧</h5>
+                <p class="card-text"><input type="text" class="form-control"></p>
+                <a href="#" class="btn btn-primary">搜索</a>
+            </div>
+        </div>
+        <div class="tab-pane fade show" id="nav3">
+            <div class="card-body">
+                <h5 class="card-title">动漫</h5>
+                <p class="card-text"><input type="text" class="form-control"></p>
+                <a href="#" class="btn btn-primary">搜索</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>快速认识JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-4">模态框网格</h3>
+<!--大尺寸模态框-->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal">打开模态框</button>
+<div class="modal" id="Modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-Title">模态框网格</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 bg-success text-white">.col-md-4</div>
+                        <div class="col-md-4 ml-auto bg-success text-white">.col-md-4 .ml-auto</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 ml-md-auto bg-danger text-white">.col-md-4 .ml-md-auto</div>
+                        <div class="col-md-4 ml-md-auto bg-danger text-white">.col-md-4 .ml-md-auto</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto mr-auto bg-warning">.col-auto .mr-auto</div>
+                        <div class="col-auto bg-warning">.col-auto</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

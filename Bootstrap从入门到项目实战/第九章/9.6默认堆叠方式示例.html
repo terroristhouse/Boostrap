@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>高级的CSS组件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h2 class="mb-4">复选框和单选按钮--默认堆叠方式</h2>
+<h5>选择你喜欢吃的水果</h5>
+<form>
+    <p>只能选择一种的水果</p>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="fruits" id="fruit1">
+        <label for="fruit1" class="form-check-label">香瓜</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="fruits" id="fruit2">
+        <label for="fruit2" class="form-check-label">哈密瓜</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="fruits" id="fruit3" disabled>
+        <label for="fruit3" class="form-check-label">西瓜（禁选）</label>
+    </div>
+</form>
+<form>
+    <p class="mt-4">可以多选的水果</p>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="fruits" id="fruit4">
+        <label for="fruit4" class="form-check-label">苹果</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="fruits" id="fruit5">
+        <label for="fruit5" class="form-check-label">香蕉</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" name="fruits" id="fruit6" disabled>
+        <label for="fruit6" class="form-check-label">菠萝(禁选)</label>
+    </div>
+</form>
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
