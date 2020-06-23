@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Container</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-4">折叠事件</h3>
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <div class="card-header">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#one">折叠</button>
+        </div>
+        <div id="one" class="collapse">
+            <div class="card-body">
+                折叠的内容
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('.collapse').on('shown.bs.collapse',function () {
+            $('body').css('background','#36ee23');
+            $('[data-toggle="collapse"]').html('折叠内容显示完成')
+        });
+        $('.collapse').on('hidden.bs.collapse',function () {
+            $('body').css('background','#fdff62');
+            $('[data-toggle="collapse"]').html('折叠内容隐藏完成')
+        })
+    })
+</script>
+</body>
+</html>

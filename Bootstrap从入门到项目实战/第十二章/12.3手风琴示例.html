@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Container</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h2 class="mb-4">手风琴示例</h2>
+<h4>个人简历</h4>
+<div id="Example">
+    <div class="card">
+        <div class="card-header">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#one">教育经历</button>
+        </div>
+        <div id="one" class="collapse show" data-parent="#Example">
+            <div class="card-body">
+                毕业于加利福尼亚大学，学习的专业为计算机科学与技术。
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#two">工作经验</button>
+        </div>
+        <div id="two" class="collapse show" data-parent="#Example">
+            <div class="card-body">
+                做过一年的软件开发
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#three">教育经历</button>
+        </div>
+        <div id="three" class="collapse show" data-parent="#Example">
+            <div class="card-body">
+                篮球，足球，街舞，表演
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .Scrollspy {
+            width: 500px;
+            height: 400px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body class="container">
+<nav id="navbar" class="navbar navbar-light bg-light">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#list1" class="nav-link">列表1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#list2" class="nav-link">列表2</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#">下拉菜单</a>
+            <div class="dropdown-menu">
+                <a href="#menu1" class="dropdown-item">菜单1</a>
+                <a href="#menu2" class="dropdown-item">菜单2</a>
+                <a href="#menu3" class="dropdown-item">菜单3</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar" data-offset="80" class="Scrollspy">
+    <h4 id="list1">列表1</h4>
+    <p><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1816366408,1729518576&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+    <h4 id="list2">列表2</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592841048969&di=6bda4d1b34aa657368850d661b49f948&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20190508%2F17%2F1557307364-SJENtIuizm.jpg" alt="" class="img-fluid"></p>
+    <h4 id="menu1">菜单1</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592841048969&di=ddcf6d9c187a8485f7b1c4d2d02bd2aa&imgtype=0&src=http%3A%2F%2Fimage.huahuibk.com%2Fuploads%2F20190130%2F19%2F1548848720-ETVQwCkWqG.jpg" alt="" class="img-fluid"></p>
+    <h4 id="menu2">菜单2</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592841048969&di=fef15d53553ce8c72a7e4178ff970988&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20180830%2F22%2F1535637788-yPpZcnIXbh.jpg" alt="" class="img-fluid"></p>
+    <h4 id="menu3">菜单3</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592841048968&di=e3c3e328e1d2ff857dfc291e36b1794c&imgtype=0&src=http%3A%2F%2Fimage.biaobaiju.com%2Fuploads%2F20190508%2F16%2F1557305155-IeLDpTwbPZ.jpg" alt="" class="img-fluid"></p>
+
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('body').on('activate.bs.scrollspy',function (e) {
+            $('body').css('background','yellow')
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+html{
+    min-width: 400px;
+}
+.left{
+    background: #4BCFE9;
+    top: 0;
+}
+.right{
+    margin-bottom: 120px;
+}
+@media (max-width: 768px){
+/*    使用媒体查询定义字体大小*/
+/*    当屏幕尺寸小于768px时，页面的根字体大小为14px*/
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+/*    当屏幕尺寸大于768px时，页面的根字体大小为15px*/
+    html{
+        font-size: 15px;
+    }
+    .left{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    .right{
+        margin-left: 25%;
+    }
+}
+ul{
+    list-style: none;
+}
+i{
+    color: #6ecadc;
+}
+.color1{
+    background: #00aa88;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+}
+.color2{
+    background: #2f6f9f;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+}
+.color3{
+    background: #5bc0de;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+}
+.color4{
+    background: #6f42c1;
+    width: 110px;
+    border-radius: 5px;
+    text-align: center;
+}

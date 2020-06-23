@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-5">弹窗事件</h3>
+<button type="button" class="btn btn-info ml-5" data-toggle="popover" id="myPopover">弹窗</button>
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#myPopover').popover({
+            title:'弹窗标题',
+            content:'弹窗内容',
+            trigger:'click',
+        });
+        $('#myPopover').on('show.bs.popover',function () {
+            $(this).removeClass('btn-info').addClass('btn-primary');
+            alert('show.bs.popover');
+        });
+        $('#myPopover').on('inserted.bs.popover',function () {
+            $(this).removeClass('btn-primary').addClass('btn-danger');
+            alert('inserted.bs.popover');
+        });
+        $('#myPopover').on('shown.bs.popover',function () {
+            $(this).removeClass('btn-danger').addClass('btn-info');
+            alert('shown.bs.popover');
+        });
+        $('#myPopover').on('hide.bs.popover',function () {
+            $(this).removeClass('btn-info').addClass('btn-success');
+            alert('hide.bs.popover');
+        });
+        $('#myPopover').on('hidden.bs.popover',function () {
+            $(this).removeClass('btn-success').addClass('btn-info');
+            alert('hidden.bs.popover');
+        });
+    })
+</script>
+</body>
+</html>

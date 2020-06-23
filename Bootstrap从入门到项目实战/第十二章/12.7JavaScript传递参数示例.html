@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Container</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h2 class="mb-5">调用工具示例</h2>
+<button type="button" class="btn btn-lg btn-danger ml-5" data-toggle="tooltip">工具提示</button>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+    //    使用data-toggle属性触发工具提示
+        $('[data-toggle="tooltip"]').tooltip({
+            animation:true,
+            html:true,
+            offset:'200px',
+            title:'<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1141259048,554497535&fm=26&gp=0.jpg" width="300" class="img-fluid">',
+            placement:'right',
+            trigger:'click',
+            delay:{show:1000,hide:1000},
+        });
+    })
+</script>
+</body>
+</html>

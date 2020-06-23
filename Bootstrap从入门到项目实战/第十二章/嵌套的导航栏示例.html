@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .Scrollspy {
+            width: 500px;
+            height: 300px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body class="container">
+<h3 class="mb-4">嵌套的导航栏示例</h3>
+<div class="row">
+    <div class="col-3">
+        <nav id="navbar1" class="navbar navbar-light bg-light">
+            <nav class="nav nav-pills flex-column">
+                <a href="#item-1" class="nav-link">列表1</a>
+                <nav class="nav nav-pills flex-column">
+                    <a href="#item-1-1" class="nav-link ml-3 my-1">列表 1-1</a>
+                    <a href="#item-1-2" class="nav-link ml-3 my-1">列表 1-2</a>
+                </nav>
+                <a href="#item-2" class="nav-link">列表2</a>
+                <a href="#item-3" class="nav-link">列表3</a>
+                <nav class="nav nav-pills flex-column">
+                    <a href="#item-3-1" class="nav-link ml-3 my-1">列表3-1</a>
+                    <a href="#item-3-2" class="nav-link ml-3 my-1">列表3-2</a>
+                </nav>
+            </nav>
+        </nav>
+    </div>
+    <div class="col-9">
+        <div data-spy="scroll" data-target="#navbar1" data-offset="80" class="Scrollspy">
+            <h4 id="item-1">列表1</h4>
+            <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592838542646&di=4158f433b8e4d8c7347988a4f67059af&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1205%2F18%2Fc0%2F11660968_1337312660218.jpg" alt="" class="img-fluid"></p>
+            <h4 id="item-1-1">列表1-1</h4>
+            <p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2094881072,1605970138&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+            <h4 id="item-1-2">列表1-2</h4>
+            <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592838542646&di=fee65d502fd906e95552c53a80850854&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1208%2F17%2Fc2%2F12988980_1345190561346.jpg" alt="" class="img-fluid"></p>
+            <h4 id="item-2">列表2</h4>
+            <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3028382880,2078154503&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+            <h4 id="item-3">列表3</h4>
+            <p><img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3460586557,1592994223&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+            <h4 id="item-3-1">列表3-1</h4>
+            <p><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1565079182,71447928&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+            <h4 id="item-3-2">列表3-2</h4>
+            <p><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1007739376,1642792436&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+        </div>
+    </div>
+</div>
+
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

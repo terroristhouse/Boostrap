@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-4">轮播事件</h3>
+<div id="Carousel" class="carousel slide carousel-fade w-50" data-ride="carousel">
+    <!--    标示图标-->
+    <ol class="carousel-indicators">
+        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#Carousel" data-slide-to="1"></li>
+        <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+    <!--    幻灯片-->
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="1000">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592817812355&di=3a9244ab51fcabd4a4ee4ebf6ae5df83&imgtype=0&src=http%3A%2F%2Fimg3.imgtn.bdimg.com%2Fit%2Fu%3D3609981743%2C3469269943%26fm%3D214%26gp%3D0.jpg" class="d-block w-100" style="height: 600px" alt="">
+            <div class="carousel-caption">
+                <h5>图片一</h5>
+                <p>说明文字</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-interval="1000">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592817810044&di=b8ba750c6befb9ad8fbee4a2aedc032e&imgtype=0&src=http%3A%2F%2Fa1.att.hudong.com%2F81%2F71%2F01300000164151121808718718556.jpg" class="d-block w-100" style="height: 600px" alt="">
+            <div class="carousel-caption">
+                <h5>图片二</h5>
+                <p>说明文字</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-interval="1000">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592817810043&di=6dbace02185a6f316a11b790e70fd5e9&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F48%2F85%2F01300000190639122695850379005.jpg" class="d-block w-100" style="height: 600px" alt="">
+            <div class="carousel-caption">
+                <h5>图片三</h5>
+                <p>说明文字</p>
+            </div>
+        </div>
+    </div>
+    <!--    按钮控制-->
+    <a href="#Carousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#Carousel" class="carousel-control-next" data-slide="prev">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('.carousel').on('slide.bs.carousel',function (e) {
+            e.target.style.border='solid 10px #FF1493';
+        });
+        $('.carousel').on('slid.bs.carousel',function (e) {
+            e.target.style.border='solid 10px #9C9C9C';
+        })
+    })
+</script>
+</body>
+</html>

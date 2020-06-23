@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .Scrollspy{
+            width: 500px;
+            height: 300px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body class="container">
+<h3 class="mb-4">在导航中的示例</h3>
+<nav id="navbar" class="navbar navbar-light bg-light">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#list1" class="nav-link">列表1</a>
+        </li>
+        <li class="nav-item">
+            <a href="#list2" class="nav-link">列表2</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">下拉菜单</a>
+            <div class="dropdown-menu">
+                <a href="#menu1" class="dropdown-item">菜单1</a>
+                <a href="#menu2" class="dropdown-item">菜单2</a>
+                <a href="#menu3" class="dropdown-item">菜单3</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="Scrollspy" data-spy="scroll" data-target="#navbar" data-offset="50">
+    <h4 id="list1">列表1</h4>
+    <p><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3612597965,1770541226&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+    <h4 id="list2">列表2</h4>
+    <p><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2110693287,2304898228&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+    <h4 id="menu1">菜单1</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592836355852&di=2073d054805ba25721f5fb57854094df&imgtype=0&src=http%3A%2F%2F2f.zol-img.com.cn%2Fproduct%2F68%2F687%2FceHBXIb1L3Mpc.jpg" alt="" class="img-fluid"></p>
+    <h4 id="menu2">菜单2</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592836355851&di=123ae9e9cb8ade88a07f33ec988037f5&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201208%2F05%2F070711tbbgstxstin0mxr5.jpg" alt="" class="img-fluid"></p>
+    <h4 id="menu3">菜单3</h4>
+    <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592836355851&di=28f3cc3a482bc01c7714f3d13f7b0fc0&imgtype=0&src=http%3A%2F%2F01.minipic.eastday.com%2F20170330%2F20170330044723_a0c69f758cc90e87e8c8e620eb55308e_2.jpeg" alt="" class="img-fluid"></p>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

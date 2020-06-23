@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        .Scrollspy {
+            width: 500px;
+            height: 500px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body class="container">
+<h3 class="mb-4">列表组示例</h3>
+<div class="row">
+    <div class="col-3">
+        <div id="list" class="list-group">
+            <a href="#list-item-1" class="list-group-item list-group-item-action">Item 1</a>
+            <a href="#list-item-2" class="list-group-item list-group-item-action">Item 2</a>
+            <a href="#list-item-3" class="list-group-item list-group-item-action">Item 3</a>
+            <a href="#list-item-4" class="list-group-item list-group-item-action">Item 4</a>
+            <a href="#list-item-5" class="list-group-item list-group-item-action">Item 5</a>
+        </div>
+    </div>
+    <div class="col-9">
+        <div data-spy="scroll" data-target="#list" data-offset="0" class="Scrollspy">
+            <h4 id="list-item-1">Item 1</h4>
+            <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592838590989&di=3b26fd142d85a57c35be1a1a195e8d6e&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F0%2F579724e59c09f.jpg" alt="" class="img-fluid"></p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592838542645&di=0aaa7145cc7a0e193d446c5c421e2b2d&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fwallpaper%2F1212%2F17%2Fc2%2F16677046_1355737208957.jpg" alt="" class="img-fluid"></p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3446717444,2037982531&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3513235684,2788458109&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+            <h4 id="list-item-5">Item 5</h4>
+            <p><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=213101828,1173125753&fm=26&gp=0.jpg" alt="" class="img-fluid"></p>
+        </div>
+    </div>
+</div>
+
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

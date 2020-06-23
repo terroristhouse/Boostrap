@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Container</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h2 class="mb-5">工具提示事件</h2>
+<button type="button" class="btn btn-info ml-5" data-toggle="myTooltip" id="myTooltip">工具提示</button>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('#myTooltip').tooltip({
+            title:'工具提示',
+            trigger:'click',
+        });
+        $('#myTooltip').on('show.bs.tooltip',function () {
+            alert('show.bs.tooltip');
+            $(this).removeClass('btn-info').addClass('btn-primary')
+        });
+        $('#myTooltip').on('inserted.bs.tooltip',function () {
+            alert('inserted.bs.tooltip');
+            $(this).removeClass('btn-primary').addClass('btn-danger')
+        });
+        $('#myTooltip').on('shown.bs.tooltip',function () {
+            alert('shown.bs.tooltip');
+            $(this).removeClass('btn-danger').addClass('btn-info')
+        });
+        $('#myTooltip').on('hide.bs.tooltip',function () {
+            alert('hide.bs.tooltip');
+            $(this).removeClass('btn-info').addClass('btn-success')
+        });
+        $('#myTooltip').on('hidden.bs.tooltip',function () {
+            alert('hidden.bs.tooltip');
+            $(this).removeClass('btn-success').addClass('btn-info')
+        });
+    })
+</script>
+</body>
+</html>

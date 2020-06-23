@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Container</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-4">一个触发器切换多个目标</h3>
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse">切换下面两个目标</button>
+</p>
+<div class="collapse multi-collapse">
+    <div class="card card-body">折叠内容一</div>
+</div>
+<div class="collapse multi-collapse">
+    <div class="card card-body">折叠内容二</div>
+</div>
+<hr class="my-4">
+<h3 class="mb-4">多个触发器切换一个目标</h3>
+<p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multi-collapse">触发器1</button>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multi-collapse">触发器2</button>
+</p>
+<div class="collapse" id="multi-collapse">
+    <div class="card card-body">
+        多个触发器触发的内容
+    </div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

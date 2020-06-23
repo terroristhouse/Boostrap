@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>深入精通JavaScript插件</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="container">
+<h3 class="mb-5">弹窗方向</h3>
+<button type="button" class="btn btn-lg btn-danger ml-5" data-toggle="popover" data-placement="left" title="弹窗标题" data-content="弹窗内容">向左</button>
+<button type="button" class="btn btn-lg btn-danger ml-5" data-toggle="popover" data-placement="right" title="弹窗标题" data-content="弹窗内容">向右</button>
+<div class="my-5">
+    <hr></div>
+<button type="button" class="btn btn-lg btn-danger ml-5" data-toggle="popover" data-placement="top" title="弹窗标题" data-content="弹窗内容">向上</button>
+<button type="button" class="btn btn-lg btn-danger ml-5" data-toggle="popover" data-placement="bottom" title="弹窗标题" data-content="弹窗内容">向下</button>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    })
+</script>
+</body>
+</html>
