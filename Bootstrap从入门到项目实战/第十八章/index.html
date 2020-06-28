@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>开发神影视频网站</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--    图标字体库-->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <!--    引入自定义样式-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="container">
+<!--头部内容-->
+<div class="header">
+    <div class="row no-gutters">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-1">
+                    <i class="fa fa-life-ring fa-4x text-success"></i>
+                </div>
+                <div class="col-4 text-center ml-3">
+                    <h3 class="header-size"><a href="#">神影视频</a></h3>
+                    <span><a href="#">ShenYingWang</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="d-flex justify-content-end">
+                <div class="form-inline">
+                    <input type="search" class="form-control" placeholder="搜索">
+                    <a href="#" class="btn btn-success"><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+            <ul class="nav size1 justify-content-end">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">三生三世十里桃花</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">仙剑奇侠传</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">诛仙</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row no-gutters mt-2">
+        <div class="col-6">
+            <a href="#" class="btn btn-warning">首页</a>
+            <a href="#" class="btn btn-warning">电影</a>
+            <a href="#" class="btn btn-warning">电视剧</a>
+            <a href="#" class="btn btn-warning">动漫</a>
+            <a href="#" class="btn btn-warning">综艺</a>
+        </div>
+        <div class="col-6 text-right">
+            <a href="#" class="btn btn-warning">登陆</a>
+            <a href="#" class="btn btn-warning">注册</a>
+        </div>
+    </div>
+    <div class="alert alert-success mt-3">
+        <div class="spinner-border spinner-border-sm text-info">
+            <span class="sr-only">Loading...</span>
+        </div>
+        如果您喜欢神影视频，请把它推荐给更多的人！
+    </div>
+</div>
+<!--设计轮播-->
+<div id="Carousel" class="carousel slide" data-ride="carousel">
+<!--    标识图标-->
+    <ol class="carousel-indicators">
+        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#Carousel" data-slide-to="1"></li>
+        <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+<!--    幻灯片-->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1593685324,2253220400&fm=26&gp=0.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593167388848&di=97b4ec2057be18432050c6d4cace0c2b&imgtype=0&src=http%3A%2F%2Fmobimg.b-cdn.net%2Fpic%2Fv2%2Fgallery%2Fpreview%2Felovek-pauk_spider_man-kino-17200.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593167388848&di=96233d5c01f33d22248d0b54a17a1357&imgtype=0&src=http%3A%2F%2Fwww.fjsen.com%2Fimages%2Fattachement%2Fjpg%2Fsite2%2F20130403%2Fd067e519cb6612c5a9701a.jpg" class="d-block w-100" alt="">
+        </div>
+    </div>
+<!--    控制按钮-->
+    <a href="#Carousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#Carousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!--设计分类列表-->
+<div class="row my-3">
+    <div class="col-4">
+        <h5 class="card-header">按热播排行</h5>
+        <div class="p-1 bg-white">
+            <a href="javascript:;" class="btn color4">本周最火</a>
+            <a href="javascript:;" class="btn color4">历史最火</a>
+            <a href="javascript:;" class="btn color4">最新上映</a>
+            <a href="javascript:;" class="btn color4">评分最高</a>
+            <a href="javascript:;" class="btn color4">女性专场</a>
+            <a href="javascript:;" class="btn color4">罪恶题材</a>
+        </div>
+    </div>
+    <div class="col-4">
+        <h5 class="card-header">按类型</h5>
+        <div class="p-1 bg-white">
+            <a href="javascript:;" class="btn color4">爱情</a>
+            <a href="javascript:;" class="btn color4">动作</a>
+            <a href="javascript:;" class="btn color4">喜剧</a>
+            <a href="javascript:;" class="btn color4">惊悚</a>
+            <a href="javascript:;" class="btn color4">恐怖</a>
+            <a href="javascript:;" class="btn color4">悬疑</a>
+            <a href="javascript:;" class="btn color4">科幻</a>
+            <a href="javascript:;" class="btn color4">历史</a>
+            <a href="javascript:;" class="btn color4">灾难</a>
+            <a href="javascript:;" class="btn color4">经典</a>
+        </div>
+    </div>
+    <div class="col-2">
+        <h5 class="card-header">按地区</h5>
+        <div class="p-1 bg-white">
+            <a href="javascript:;" class="btn color4">内地</a>
+            <a href="javascript:;" class="btn color4">港台</a>
+            <a href="javascript:;" class="btn color4">欧美</a>
+        </div>
+    </div>
+    <div class="col-2">
+        <h5 class="card-header">按电影基因</h5>
+        <div class="p-1 bg-white">
+            <a href="javascript:;" class="btn color4">抗日</a>
+            <a href="javascript:;" class="btn color4">间谍</a>
+            <a href="javascript:;" class="btn color4">硬汉</a>
+            <a href="javascript:;" class="btn btn-outline-success btn-sm">更多</a>
+        </div>
+    </div>
+</div>
+<!--视频内容-->
+<div class="row pl-3 scale">
+    <div class="col-9 bg-white pt-3">
+        <div class="d-flex justify-content-between">
+            <div><h3><div class="border1 mr-2"></div>最新电影</h3></div>
+            <div><a href="javascript:;" class="btn btn-outline-danger btn-sm">更多</a></div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-3 p-1">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593168495263&di=b7e38bc5756f8e88529be2bc2c14a20b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F869200af6120b5d7b53b68efa33668fccacd59c0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">绿巨人2</h5>
+                <p class="color2">最帅绿巨人诺顿</p>
+            </div>
+            <div class="col-3 p-1">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593168495263&di=b7e38bc5756f8e88529be2bc2c14a20b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F869200af6120b5d7b53b68efa33668fccacd59c0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">绿巨人2</h5>
+                <p class="color2">最帅绿巨人诺顿</p>
+            </div>
+            <div class="col-3 p-1">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593168495263&di=b7e38bc5756f8e88529be2bc2c14a20b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F869200af6120b5d7b53b68efa33668fccacd59c0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">绿巨人2</h5>
+                <p class="color2">最帅绿巨人诺顿</p>
+            </div>
+            <div class="col-3 p-1">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593168495263&di=b7e38bc5756f8e88529be2bc2c14a20b&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F869200af6120b5d7b53b68efa33668fccacd59c0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">绿巨人2</h5>
+                <p class="color2">最帅绿巨人诺顿</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between mt-2">
+            <div><h3><div class="border2 mr-2"></div>最新电视剧</h3></div>
+            <div><a href="javascript:;" class="btn btn-outline-primary btn-sm">更多</a></div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-3 p-1">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2661402963,3690309663&fm=26&gp=0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">闪电侠</h5>
+                <p class="color2">宇宙快男大战思考者</p>
+            </div>
+            <div class="col-3 p-1">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2661402963,3690309663&fm=26&gp=0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">闪电侠</h5>
+                <p class="color2">宇宙快男大战思考者</p>
+            </div>
+            <div class="col-3 p-1">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2661402963,3690309663&fm=26&gp=0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">闪电侠</h5>
+                <p class="color2">宇宙快男大战思考者</p>
+            </div>
+            <div class="col-3 p-1">
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2661402963,3690309663&fm=26&gp=0.jpg" class="img-fluid" alt="">
+                <h5 class="color1">闪电侠</h5>
+                <p class="color2">宇宙快男大战思考者</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-3">
+        <div><h4><i class="fa fa-fire mr-2 text-danger"></i>最热电影</h4></div>
+        <div class="list-group list-group-flush mt-3">
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number1 mr-3">1</span><b class="color3">老师好</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number1 mr-3">2</span><b class="color3">笑刀江湖</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number1 mr-3">3</span><b class="color3">流浪地球</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">4</span><b class="color3">人间喜剧</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">5</span><b class="color3">复仇者联盟3</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">6</span><b class="color3">一代宗师</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">7</span><b class="color3">叶问3</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">8</span><b class="color3">风中有朵雨做的云</b>
+            </a>
+        </div>
+        <div class="mt-4 mb-3"><h4><i class="fa fa-fire mr-2 text-primary"></i>最热电视剧</h4></div>
+        <div class="list-group list-group-flush">
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number2 mr-3">1</span><b class="color3">仙剑奇侠传</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number2 mr-3">2</span><b class="color3">趁我们还年轻</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number2 mr-3">3</span><b class="color3">暖暖小时光</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">4</span><b class="color3">何人生还</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">5</span><b class="color3">权利的游戏</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">6</span><b class="color3">遇见爱情</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">7</span><b class="color3">三生三世十里桃花</b>
+            </a>
+            <a href="javascript:;" class="list-group-item list-group-item-action list-group-item-light">
+                <span class="number3 mr-3">8</span><b class="color3">诛仙</b>
+            </a>
+        </div>
+    </div>
+</div>
+<!--设计脚注-->
+<div class="footer mt-4 py-4">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link active">关于我们</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link">|</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link">联系我们</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link">|</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link">诚聘英才</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link">|</a>
+        </li>
+        <li class="nav-item">
+            <a href="javascript:;" class="nav-link">友情链接</a>
+        </li>
+    </ul>
+    <div class="text-center size2">电影卫星频道节目制作中心</div>
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>相册类博客项目</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--    字体图标文件-->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <!--    自定义css文件-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<!--导航栏-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="index.html" class="navbar-brand"><img
+            src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4031816500,2465166800&fm=26&gp=0.jpg"
+            width="45" alt=""></a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="class.html" class="nav-link">分类</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">博客</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">联系</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input type="search" class="form-inline mr-sm-2" placeholder="搜索">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+    </div>
+</nav>
+<!--博客页面-->
+<div class="border row bg-white m-0 px-3 pt-4 pb-5 blog-border">
+    <!--左侧文章展示部分-->
+    <div class="col-8">
+
+        <div>
+            <h4>
+                <i class="fa fa-smile-o mr-2"></i>
+                <span>我的足迹</span>
+            </h4>
+            <hr>
+            <div class="mb-3">
+                <i class="fa fa-user-o"></i><span class="ml-1 mr-2">欢欢</span>
+                <i class="fa fa-clock-o"></i><span class="ml-1 mr-2">15天前</span>
+                <a href="javascript:void(0);" class="ml-1 mr-2"><i class="fa fa-commenting-o">156条</i></a>
+            </div>
+            <img src="http://img0.imgtn.bdimg.com/it/u=1101084170,1274803972&fm=26&gp=0.jpg" alt=""
+                 class="img-fluid mb-3">
+        </div>
+        <p class="retract">
+            　　一个人旅行，一台相机足以、不理会繁杂的琐事，自由自在地，去体验一个城市、一段故事、留下一片欢笑。
+        </p>
+    </div>
+    <!--右侧推荐区-->
+    <div class="col-4">
+        <h4 class="shadow mb-4">
+            <span class="mx-2">推荐旅游胜地</span><i class="fa fa-bicycle"></i>
+        </h4>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item border-top-0">
+                <i class="fa fa-hand-o-right mr-3"></i>神秘奇幻、佳景荟萃的九寨沟
+            </li>
+            <li class="list-group-item">
+                <i class="fa fa-hand-o-right mr-3"></i>奇伟俏丽、灵秀多姿的黄山
+            </li>
+            <li class="list-group-item">
+                <i class="fa fa-hand-o-right mr-3"></i>青山碧水、银滩巨浪的三亚
+            </li>
+            <li class="list-group-item">
+                <i class="fa fa-hand-o-right mr-3"></i>山青、水秀、洞奇、石美的桂林山水
+            </li>
+            <li class="list-group-item">
+                <i class="fa fa-hand-o-right mr-3"></i>山水秀丽、景色宜人的杭州西湖
+            </li>
+        </ul>
+    </div>
+</div>
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

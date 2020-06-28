@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>仿星巴克网站</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--    字体图标文件-->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <!--    自定义样式-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<div class="row">
+    <!--    左侧导航-->
+    <div class="col-12 col-lg-3 left">
+        <div id="template1">
+            <div class="row">
+                <div class="col-10">
+                    <!--                    导航条-->
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <img src="http://pic.58pic.com/58pic/12/06/74/07258PICNyX.jpg" width="40"
+                                     class="rounded-circle" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <a href="javascript:void(0);" class="nav-link">账户</a>
+                        </li>
+                        <li class="nav-item mt-1">
+                            <a href="javascript:void(0);" class="nav-link">菜单</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 mt-2 font-menu text-right">
+                    <a href="javascript:void(0);" id="a1"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="margin1">
+                <h5 class="ml-3 my-3 d-none d-sm-block text-lg-center">
+                    <b>心情惬意、来杯咖啡吧</b>&nbsp;&nbsp;<i class="fa fa-coffee"></i>
+                </h5>
+                <div class="ml-3 my-3 d-none d-sm-block text-lg-center">
+                    <a href="#" class="card-link btn rounded-pill text-success"><i class="fa fa-user-circle"></i>&nbsp;登&nbsp;陆</a>
+                    <a href="#" class="card-link btn btn-outline-success rounded-pill text-success">注&nbsp;册</a>
+                </div>
+            </div>
+        </div>
+        <!--        隐藏导航栏-->
+        <div id="template2" class="d-none">
+            <div class="row">
+                <div class="col-10">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">
+                                <img src="http://pic.58pic.com/58pic/12/06/74/07258PICNyX.jpg" alt="" width="40"
+                                     class="rounded-circle">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link mt-2">咖啡俱乐部</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-2 mt-2 font-menu text-right">
+                    <a href="javascript:void(0);" id="a2"><i class="fa fa-times"></i></a>
+                </div>
+            </div>
+            <div class="margin2">
+                <div class="ml-5 mt-5">
+                    <h6><a href="javascript:;">门店</a></h6>
+                    <h6><a href="javascript:;">俱乐部</a></h6>
+                    <h6><a href="javascript:;">菜单</a></h6>
+                    <hr>
+                    <h6><a href="javascript:;">移动应用</a></h6>
+                    <h6><a href="javascript:;">秦选精品</a></h6>
+                    <h6><a href="javascript:;">专星送</a></h6>
+                    <h6><a href="javascript:;">咖啡讲堂</a></h6>
+                    <h6><a href="javascript:;">烘焙工厂</a></h6>
+                    <h6><a href="javascript:;">帮助中心</a></h6>
+                    <hr>
+                    <a href="#" class="card-link btn rounded-pill text-success pl-0"><i class="fa fa-user-circle"></i>&nbsp;登&nbsp;陆</a>
+                    <a href="#" class="card-link btn btn-outline-success rounded-pill text-success">注&nbsp;册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    右侧主体内容-->
+    <div class="col-12 col-lg-9 right p-0 clearfix">
+        <!--        轮播广告区-->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner max-h">
+                <div class="carousel-item active">
+                    <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3764483885,4083168537&fm=26&gp=0.jpg"
+                         class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592932077110&di=cd7fb84e36a5c1676a00ab4a23579bc8&imgtype=0&src=http%3A%2F%2Fattachment.jmw.com.cn%2Fuploadfile%2F2015%2F0403%2F20150403013807493.jpg"
+                         class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592932114630&di=8016378ca877749b296f64347715841d&imgtype=0&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D3596133729%2C855335225%26fm%3D214%26gp%3D0.jpg"
+                         class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <a href="#carouselExampleControls" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carouselExampleControls" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+<!--        产品推荐区-->
+        <div class="p-4 list">
+            <h5 class="text-center my-3">咖啡推荐</h5>
+            <h5 class="text-center mb-4 text-secondary">
+                <small>在购物旗舰店可以发现更多咖啡心意</small>
+            </h5>
+<!--            多列卡片浮动排版-->
+            <div class="card-columns">
+                <div class="my-4 my-sm-0">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592933913255&di=3cfd49ae1b46e2f9f514532950714019&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201301%2F28%2F20130128141904_5AwPK.jpeg" class="card-img-top" alt="">
+                </div>
+                <div class="my-4 my-sm-0">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592933801297&di=adf480a55bf0abf7f224be6f21a9ecca&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F16%2F08%2F10%2F2157ab2a01b5f6c.jpg" class="card-img-top" alt="">
+                </div>
+                <div class="my-4 my-sm-0">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1592933817124&di=22ba5098fcefd4442a902e8b2ea12b32&imgtype=0&src=http%3A%2F%2Fimg2.imgtn.bdimg.com%2Fit%2Fu%3D2793055047%2C2676139222%26fm%3D214%26gp%3D0.jpg" class="card-img-top" alt="">
+                </div>
+            </div>
+        </div>
+<!--        登陆注册区和logo-->
+        <div class="row py-5">
+            <div class="col-12 col-sm-6 pt-2">
+                <div class="card border-0 text-center text-sm-left">
+                    <div class="card-body ml-5">
+                        <h4 class="card-title">咖啡俱乐部</h4>
+                        <p class="card-text">开启您的星享之旅，星星越多、会员等级越高、好礼越丰富。</p>
+                        <a href="#" class="card-link btn btn-outline-success">注册</a>
+                        <a href="#" class="card-link btn btn-outline-success">登陆</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 text-center mt-5">
+                <a href="#">
+                    <img src="http://img1.imgtn.bdimg.com/it/u=3393326001,2411887059&fm=214&gp=0.jpg" alt="" class="img-fluid">
+                </a>
+            </div>
+        </div>
+<!--        特色展示区-->
+        <div class="p-4 list">
+            <h5 class="text-center my-3">咖啡精选</h5>
+            <h5 class="text-center mb-4 text-secondary">
+                <small>在购物旗舰店可以发现更多咖啡心意</small>
+            </h5>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+                    <div class="bg-light p-4 list-border rounded">
+                        <img src="http://www.qbaobei.com/UploadFiles/ysjk/2013/3/201303141718412131.jpg" class="img-fluid" alt="">
+                        <h6 class="text-secondary text-center mt-3">套餐一</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+                    <div class="bg-white p-4 list-border rounded">
+                        <img src="http://img1.imgtn.bdimg.com/it/u=1889104524,1865000713&fm=26&gp=0.jpg" class="img-fluid" alt="">
+                        <h6 class="text-secondary text-center mt-3">套餐二</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+                    <div class="bg-light p-4 list-border rounded">
+                        <img src="http://thumbs.dreamstime.com/x/%E7%83%AD%E5%A5%B6%E5%92%96%E5%95%A1%E6%9D%AF%E5%AD%90%E7%89%B9%E5%86%99%E9%95%9C-%EF%BC%8C%E5%BD%93%E5%BF%83%E8%84%8F%E8%A3%85%E9%A5%B0%E5%9C%A8%E6%B3%A1%E6%B2%AB%E9%A1%B6%E9%83%A8%E3%80%82-31905893.jpg" class="img-fluid" alt="">
+                        <h6 class="text-secondary text-center mt-3">套餐三</h6>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 mb-3 mb-md-0">
+                    <div class="bg-light p-4 list-border rounded">
+                        <img src="http://image.17173.com/bbs/upload/2008/07/04/121516414525.jpg" class="img-fluid" alt="">
+                        <h6 class="text-secondary text-center mt-3">套餐四</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--        产品生产流程区-->
+        <div class="p-4">
+            <h5 class="text-center my-3">咖啡讲堂</h5>
+            <h5 class="text-center mb-4 text-secondary">
+                <small>了解更多咖啡文化</small>
+            </h5>
+            <div class="box">
+                <ul class="clearfix" id="ulList">
+                    <li class="list-border rounded">
+                        <img src="http://img2.imgtn.bdimg.com/it/u=3541722414,3884659824&fm=26&gp=0.jpg" alt="" width="300">
+                        <h6 class="text-center mt-3">咖啡种植</h6>
+                    </li>
+                    <li class="list-border rounded">
+                        <img src="http://hiphotos.baidu.com/feed/pic/item/9358d109b3de9c82918990246781800a18d843a8.jpg" alt="" width="300">
+                        <h6 class="text-center mt-3">咖啡调制</h6>
+                    </li>
+                    <li class="list-border rounded">
+                        <img src="http://img3.imgtn.bdimg.com/it/u=2725276117,4103638164&fm=26&gp=0.jpg" alt="" width="300">
+                        <h6 class="text-center mt-3">咖啡烘焙</h6>
+                    </li>
+                    <li class="list-border rounded">
+                        <img src="http://img2.imgtn.bdimg.com/it/u=3335899916,2513047612&fm=26&gp=0.jpg" alt="" width="300">
+                        <h6 class="text-center mt-3">手冲咖啡</h6>
+                    </li>
+                </ul>
+                <div id="left">
+                    <i class="fa fa-chevron-circle-left"></i>
+                </div>
+                <div id="right">
+                    <i class="fa fa-chevron-circle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--隐藏导航栏-->
+<div class="row fixed-bottom d-block d-sm-none bg-light border-top py-1" id="footer">
+    <ul class="text-center p-0" id="myTab">
+        <li>
+            <a href="index.html" class="ab"><i class="fa fa-home fa-2x p-1"></i><br>主页</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);"><i class="fa fa-calendar-minus-o fa-2x p-1"></i><br>门店</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);"><i class="fa fa-user-circle-o fa-2x p-1"></i><br>我的账户</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);"><i class="fa fa-bitbucket-square fa-2x p-1"></i><br>菜单</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);"><i class="fa fa-table fa-2x p-1"></i><br>更多</a>
+        </li>
+    </ul>
+</div>
+
+
+<!--引入js文件-->
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!--自定义js文件-->
+<script src="js/index.js"></script>
+<script>
+    $(function () {
+        var nowIndex = 0;
+        var liNumber = $('#ulList li').length;
+        function change(index) {
+            var ulMove = index*300;
+            $('#ulList').animate({left:'-'+ulMove+'px'},500);
+        }
+        $('#left').click(function () {
+            nowIndex = (nowIndex > 0) ? (--nowIndex) : 0;
+            change(nowIndex)
+        });
+        $('#right').click(function () {
+            nowIndex = (nowIndex < liNumber-1) ? (++nowIndex):(liNumber-1);
+            change(nowIndex)
+        })
+    });
+    $(function () {
+    $('#footer ul li').click(function () {
+        $(this).find('a').addClass('ab');
+        $(this).siblings().find('a').removeClass('ab');
+    })
+});
+</script>
+</body>
+</html>

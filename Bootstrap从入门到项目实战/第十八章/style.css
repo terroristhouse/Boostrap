@@ -1,0 +1,92 @@
+body{
+    background: #ececec;
+    font-family: 微软雅黑;
+}
+.header-size{
+    font-size: 2rem;
+}
+.size1{
+    font-size: 0.8rem;
+}
+.carousel-item img{
+    height: 500px;
+}
+.color4{
+    font-size: 0.9rem;
+}
+.color4:hover{
+    background: #00cc00;
+    color: white;
+}
+.card-header{
+    border: 0;
+    background: #dedede;
+    font-size: 1rem;
+    border-left: 3px solid #00cc00;
+}
+.color1{
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.color1:hover{
+    color: red;
+}
+.scale img:hover{
+    transform: scale(1.05);
+}
+.color2{
+    font-size: 0.8rem;
+    color: grey;
+}
+.color2:hover{
+    color: black;
+}
+.number1{
+    padding: 0.3rem 0.65rem;
+    background: red;
+    color: white;
+    font-size: 12px;
+}
+.number2{
+    padding: 0.3rem 0.65rem;
+    background: blue;
+    color: white;
+    font-size: 12px;
+}
+.number3{
+    padding: 0.3rem 0.65rem;
+    background: #ffac2b;
+    color: white;
+    font-size: 12px;
+}
+.border1{
+    height: 20px;
+    display: inline-block;
+    border: 3px solid red;
+}
+.border2{
+    height: 20px;
+    display: inline-block;
+    border: 3px solid blue;
+}
+.list-group-item{
+    padding: 0.5rem 1rem;
+}
+.color3{
+    font-size: 1rem;
+    color: black;
+}
+.color3:hover{
+    color: red;
+}
+.footer{
+    border-top: 2px solid white;
+}
+.footer a, .size2{
+    font-size: 0.8rem;
+    color: black;
+}
+.footer a:hover{
+    color: red;
+}

@@ -1,0 +1,66 @@
+#navbar{
+    height: 60px;
+    box-shadow: 0 1px 10px red;
+}
+.list{
+    height: 50px;
+}
+.nav_list li{
+    margin-left: 10px;
+}
+.nav-list li:hover{
+    border-bottom: 2px solid white;
+}
+.iconColor a{
+    color: white;
+}
+.iconColor a:hover i{
+    color: red;
+    transform: scale(1.5);
+}
+.active{
+    border-bottom: 2px solid red;
+}
+.navbar-brand:hover{
+    transform: scale(1.5);
+}
+.img-b{
+    background: url("https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1447425589,2489704120&fm=26&gp=0.jpg");
+    background-size: 1150px 568px;
+}
+.jumbotron{
+    height: 500px;
+    background: rgba(0,0,255,0.6);
+}
+ul li{
+    list-style: none;
+}
+img{
+    transition: all 0.2s ease-in;
+}
+img:hover{
+    transform: scale(1.05);
+}
+p{
+    text-indent: 2em;
+}
+.bg1{
+    background: #7870E8;
+    padding: 30px 0;
+}
+.i-circle{
+    padding: 20px 20px;
+    background: white;
+    color: #7870E8;
+}
+.i-circle1{
+    padding: 20px 35px;
+    background: white;
+    color: #7870E8;
+}
+.i-circle:hover{
+    transform: scale(1.1);
+}
+.i-circle1:hover{
+    transform: scale(1.1);
+}

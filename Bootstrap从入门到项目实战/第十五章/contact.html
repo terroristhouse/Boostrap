@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>相册类博客项目</title>
+    <!--    Bootstrap核心css文件-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--    字体图标文件-->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+    <!--    自定义css文件-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+<!--导航栏-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a href="index.html" class="navbar-brand"><img
+            src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4031816500,2465166800&fm=26&gp=0.jpg"
+            width="45" alt=""></a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="class.html" class="nav-link">分类</a>
+            </li>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">博客</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">联系</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input type="search" class="form-inline mr-sm-2" placeholder="搜索">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+    </div>
+</nav>
+<!--联系页-->
+<div class="row border bg-white m-0 px-3 pt-4 pb-5 blog-border">
+<!--    左侧表单-->
+    <div class="col-12 col-lg-8 pb-5">
+        <h4>
+            <i class="fa fa-volume-control-phone mr-2"></i>
+            <span>你的联系方式</span>
+        </h4>
+        <hr>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control w-75" placeholder="姓名" data-toggle="popover" data-placement="right" data-content="请输入你的姓名">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control w-75" placeholder="邮箱" data-toggle="popover" data-placement="right" data-content="请输入你的邮箱">
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control w-75" placeholder="手机号" data-toggle="popover" data-placement="right" data-content="请输入你的手机号">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control w-75" rows="5" placeholder="留言板" data-toggle="popover" data-placement="right" data-content="留言板"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+        </form>
+    </div>
+<!--    右侧联系信息-->
+    <div class="col-12 col-lg-4">
+        <h4 class="shadow mb-4">
+            <i class="fa fa-phone-square mx-2"></i>
+            <span>联系我们</span>
+        </h4>
+        <div class="alert alert-primary">
+            <i class="fa fa-qq mr-3"></i>
+            <span>867940410</span>
+        </div>
+        <div class="alert alert-info">
+            <i class="fa fa-weixin mr-3"></i>
+            <span>刘飞</span>
+        </div>
+        <div class="alert alert-success">
+            <i class="fa fa-mobile fa-2x mr-3"></i>
+            <span>12345678912</span>
+        </div>
+        <div class="alert alert-danger">
+            <i class="fa fa-map-maker fa-2x mr-3"></i>
+            <span>北京千古摄影工作室</span>
+        </div>
+    </div>
+
+</div>
+
+<!--引入js文件-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<!--Bootstrap核心JavaScript文件-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+    $(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+</script>
+</body>
+</html>

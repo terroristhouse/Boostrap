@@ -1,0 +1,95 @@
+@media (max-width: 992px){
+/*    在小屏设备中，设置外边距，上下边距为1rem，左右为0*/
+    .left{
+        margin: 1rem 0;
+    }
+}
+@media(min-width: 992px){
+/*    在大屏设备中，左侧导航设置固定定位，右侧主体内容设置左外边距25%*/
+    .left{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .right{
+        margin-left: 25%;
+    }
+    .margin1{
+        margin-top: 40vh;
+    }
+}
+.margin2 h6{
+    margin: 20px 0;
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+}
+.left{
+    border-right: 2px solid #eeeeee;
+}
+.left a{
+    font-weight: bold;
+    color: #000;
+}
+@media(min-width: 992px){
+/*    使用媒体查询定义导航的高度，当屏幕宽度大于992px时，导航高度为100vh*/
+    .left{
+        height: 100vh;
+    }
+}
+.max-h{
+    max-height: 300px;
+}
+.max-h img{
+    height: 300px;
+}
+.list{
+    background: #eeeeee;
+}
+.list-border{
+    border: 2px solid #DBDBDB;
+    border-top: 1px solid #BDBDBD;
+}
+.box{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#ulList{
+    list-style: none;
+    width: 1400px;
+    position: absolute;
+}
+#ulList li{
+    float: left;
+    margin-left: 15px;
+    z-index: 1;
+}
+#left{
+    position: absolute;
+    left: 20px;top:30%;
+    z-index: 10;
+    cursor: pointer;
+}
+#right{
+    position: absolute;
+    right: 20px;top: 30%;
+    z-index: 10;
+    cursor: pointer;
+}
+.font-menu{
+    font-size: 1.3rem;
+}
+.ab{
+    color: #00A862!important;
+}
+#myTab li{
+    float: left;
+    width: 20vw;
+    min-width: 30px;
+    font-size: 0.8rem;
+    color: #919191;
+}
+
